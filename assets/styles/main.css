@@ -49,7 +49,7 @@ button {
 
     /* shadow */
 
-    --shadow-lg: 0 25px 50px rgb(240, 186, 9);
+    --shadow-lg: 0 25px 50px rgb(194, 153, 18);
     --shadow-sm: 0 25px 50px rgb(240, 186, 9);
     /* radios */
     --radios-xl: 32px;
