@@ -1,62 +1,77 @@
  /* reset */
-*,
-*::after,
-*::befor {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+ *,
+ *::after,
+ *::befor {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
 
-a {
-    text-decoration: none;
-    color: inherit;
+ a {
+     text-decoration: none;
+     color: inherit;
 
-}
+ }
 
-ul {
-    list-style: none;
-}
+ ul {
+     list-style: none;
+ }
 
-img {
-    display: block;
-    max-width: 100%;
-}
+ img {
+     display: block;
+     max-width: 100%;
+ }
 
-input,
-button {
-    font: inherit;
-    border: none;
-    outline: none;
-}
+ input,
+ button {
+     font: inherit;
+     border: none;
+     outline: none;
+ }
 
-button {
-    cursor: pointer;
-}
+ button {
+     cursor: pointer;
+ }
 
-/* variables */
-:root {
-    /* color */
-    --primmary: rgb(216, 243, 64);
-    --primary-dark: rgb(251, 203, 61);
-    --secondary: rgb(240, 186, 9);
-    --surface: rgb(116, 91, 9);
-    --surface-hover: rgb(89, 69, 5);
-    --border: rgb(62, 48, 1);
-    --white: rgb(250, 239, 205);
-    --text: rgb(78, 78, 76);
-    --text-light: rgb(135, 135, 132);
-    --success: rgb(10, 205, 10);
+ /* variables */
+ :root {
+     /* color */
+     --primmary: rgb(216, 243, 64);
+     --primary-dark: rgb(251, 203, 61);
+     --secondary: rgb(240, 186, 9);
+     --surface: rgb(116, 91, 9);
+     --surface-hover: rgb(89, 69, 5);
+     --border: rgb(62, 48, 1);
+     --white: rgb(250, 239, 205);
+     --text: rgb(78, 78, 76);
+     --text-light: rgb(135, 135, 132);
+     --success: rgb(10, 205, 10);
 
-    /* shadow */
+     /* shadow */
 
-    --shadow-lg: 0 25px 50px rgb(194, 153, 18);
-    --shadow-sm: 0 25px 50px rgb(240, 186, 9);
-    /* radios */
-    --radios-xl: 32px;
-    --radios-lg: 32px;
-    --radios-md: 32px;
-    --radios-sm: 32px;
+     --shadow-lg: 0 25px 50px rgb(194, 153, 18);
+     --shadow-sm: 0 25px 50px rgb(240, 186, 9);
 
-    /* Transition */
-    --trantition: .2s ease;
-}
+     /* radios */
+     --radios-xl: 32px;
+     --radios-lg: 32px;
+     --radios-md: 32px;
+     --radios-sm: 32px;
+
+
+     /* Transition */
+     --trantition: .2s ease;
+ }
+
+ body {
+     font-family: inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     color: var(--text);
+     background: radial-gradient(circle at top left, #f09708 0%, transparent 35%),
+         radial-gradient(circle at bottom right, #e07e06 0%, transparent 30%),
+          linear-gradient(135deg, #f1e162, #e0d506, #f6ab50);
+          min-height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 40px;
+ }
