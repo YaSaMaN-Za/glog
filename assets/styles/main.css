@@ -10,7 +10,6 @@
  a {
      text-decoration: none;
      color: inherit;
-
  }
 
  ul {
@@ -39,17 +38,19 @@
      --primmary: rgb(216, 243, 64);
      --primary-dark: rgb(251, 203, 61);
      --secondary: rgb(240, 186, 9);
-     --surface: rgb(116, 91, 9);
-     --surface-hover: rgb(89, 69, 5);
-     --border: rgb(62, 48, 1);
+     --surface: rgb(206, 159, 4);
+     --surface-hover: rgb(251, 194, 5);
+     --border: rgb(183, 142, 5);
      --white: rgb(250, 239, 205);
      --text: rgb(78, 78, 76);
      --text-light: rgb(135, 135, 132);
      --success: rgb(10, 205, 10);
+     --placeholder: #926004;
+     --surface-focus:#f58443;
 
-     /* shadow */
+         /* shadow */
 
-     --shadow-lg: 0 25px 50px rgb(194, 153, 18);
+         --shadow-lg: 0 25px 50px rgb(194, 153, 18);
      --shadow-sm: 0 25px 50px rgb(240, 186, 9);
 
      /* radios */
@@ -63,6 +64,7 @@
      --trantition: .2s ease;
  }
 
+ /* body */
  body {
      font-family: inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
      color: var(--text);
@@ -88,12 +90,63 @@
 
  .logo i {
      width: 55px;
-height: 55px;
-border-radius: var(--radios-md);
-display: grid;
-place-items: center;
-font-size: 1.35rem;
-background: linear-gradient(135deg, var(--primmary),var(--primary-dark));
-box-shadow: 0 15px 35px rgb(194, 153, 18, .35); 
+     height: 55px;
+     border-radius: var(--radios-md);
+     display: grid;
+     place-items: center;
+     font-size: 1.35rem;
+     background: linear-gradient(135deg, var(--primmary), var(--primary-dark));
+     box-shadow: 0 15px 35px rgba(219, 171, 12, 0.35);
+ }
 
-}
+ .gallery {
+     /* Temporary */
+     display: none;
+ }
+
+ .login-form {
+     display: flex;
+     flex-direction: column;
+     gap: 24px;
+
+ }
+
+ .input-group {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+ }
+
+ .input-group label {
+     font-size: .92rem;
+     font-weight: 700;
+     color: var(--text);
+ }
+
+ .input-group input {
+     width: 100%;
+     height: 58px;
+     padding-inline: var(--border)20px;
+     border-radius: 16px;
+     background: var(--surface);
+     border: 2px solid var(--border);
+     color: var(--white);
+     transition: var(--trantition);
+
+ }
+
+ .input-group input::placeholder {
+     color: var(--placeholder);
+
+ }
+
+ .input-group input:hover {
+     background: var(--surface-hover);
+
+ }
+
+ .input-group input:focus {
+     border-color: var(--primmary);
+     background: var(--surface-focus);
+     box-shadow: 0 0 0 5px gitrgb(235, 235, 36);
+ }
