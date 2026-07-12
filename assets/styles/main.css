@@ -68,10 +68,32 @@
      color: var(--text);
      background: radial-gradient(circle at top left, #f09708 0%, transparent 35%),
          radial-gradient(circle at bottom right, #e07e06 0%, transparent 30%),
-          linear-gradient(135deg, #f1e162, #e0d506, #f6ab50);
-          min-height: 100vh;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          padding: 40px;
+         linear-gradient(135deg, #f1e162, #e0d506, #f6ab50);
+     min-height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 40px;
  }
+
+ .log {
+     display: flex;
+     align-items: center;
+     gap: 14px;
+     margin-bottom: 25px;
+     font-size: 1.1rem;
+     font-weight: 700;
+     color: var(--white);
+ }
+
+ .logo i {
+     width: 55px;
+height: 55px;
+border-radius: var(--radios-md);
+display: grid;
+place-items: center;
+font-size: 1.35rem;
+background: linear-gradient(135deg, var(--primmary),var(--primary-dark));
+box-shadow: 0 15px 35px rgb(194, 153, 18, .35); 
+
+}
