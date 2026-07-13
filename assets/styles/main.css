@@ -92,6 +92,16 @@
      backdrop-filter: blur(30px);
  }
 
+ .register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    background-color: #f3eba4;
+    backdrop-filter: blur(30px);
+    position: relative;
+ }
+
  .log {
      display: flex;
      align-items: center;
