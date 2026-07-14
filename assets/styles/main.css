@@ -41,10 +41,10 @@
 
      --secondary: #FDBA74;
 
-     --surface: #FFFFFF;
+     --surface: #f7ecd3;
      --surface-hover: #FFF7ED;
 
-     --border: #FED7AA;
+     --border: #f8e8d6;
 
      --text: #1F2937;
      --text-light: #6B7280;
@@ -53,7 +53,7 @@
 
      --success: #22C55E;
      --suface-focus: #fff3e0;
-     --white:#ffffff;
+     --white: #ff8317;
 
 
 
@@ -67,6 +67,7 @@
      --radius-lg: 32px;
      --radius-md: 32px;
      --radius-sm: 32px;
+     --radius-xs: 6px;
 
 
      /* Transition */
@@ -79,7 +80,7 @@
      color: var(--text);
      background: radial-gradient(circle at top left, #fa7b04 0%, transparent 35%),
          radial-gradient(circle at bottom right, #ff8d01 0%, transparent 30%),
-         linear-gradient(135deg, #f6f2d3, #f8f285, #f5e504);
+         linear-gradient(135deg, #c7b847, #bfb94d, #f5e504);
      min-height: 100vh;
      display: flex;
      justify-content: center;
@@ -183,3 +184,40 @@
      background: var(--surface-focus);
      box-shadow: 0 0 0 5px rgb(235, 235, 36);
  }
+
+ .options {
+     margin-top: -5px;
+ }
+
+ .remember {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     color: var(--text-light);
+     font-size: .92rem;
+     cursor: pointer;
+ }
+
+ .remember input {
+     appearance: none;
+     width: 20px;
+     height: 20px;
+     border-radius: var(--radius-xs);
+     border: 2px solid var(--border);
+     background-color: transparent;
+     transition: var(--transition);
+     position: relative;
+  }
+  .remember input:checked{
+    background: var(--primary);
+    border-color: var(--primary-dark);
+  }
+ .remember input:checked::after{
+    content: "√";
+    position: absolute;
+    color: var(--success);
+    font-size: 1.3rem;
+    inset: 0;
+    place-items: center;
+    display: flex;
+  } 
