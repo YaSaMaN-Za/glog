@@ -32,14 +32,16 @@
      cursor: pointer;
  }
 
- ::selection{
+ ::selection {
      color: #EA580C;
      background: #cb9ec2;
  }
+
  ::-moz-selection {
      color: #EA580C;
      background: #cb9ec2;
-}
+ }
+
  /* variables */
  :root {
      /* color */
@@ -167,11 +169,6 @@
 
  .matn i {
      font-size: 22px;
- }
-
- .gallery {
-     /* Temporary */
-     display: none;
  }
 
  .login-form {
@@ -359,4 +356,11 @@
          color: var(--white);
 
      }
+ }
+
+ .gallery {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 20px;
+
  }
