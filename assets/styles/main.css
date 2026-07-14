@@ -112,6 +112,7 @@
      border: 1px solid var(--border);
      box-shadow: var(--shadow-lg);
      backdrop-filter: blur(30px);
+     
  }
 
  .register {
@@ -361,6 +362,32 @@
  .gallery {
      display: grid;
      grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: repeat(3, 150px);
      gap: 20px;
+     background: linear-gradient(135deg, var(--primary), #f7df7d, #c9761d);
+     padding: 40px;
+ }
+
+ .card {
+     position: relative;
+     overflow: hidden;
+     border-radius: var(--radius-lg);
+     cursor: pointer;
+     background: #c9761d;
+     box-shadow: var(--shadow-sm);
+     transition: var(--transition);
+ }
+
+ .card img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     transition: .6s;
+
+ }
+
+ .card1 {
+     grid-column: span 3;
+     grid-row: span 4;
 
  }
