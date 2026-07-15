@@ -31,6 +31,6 @@ The template includes a signup form with social login options next to a beautifu
 </div>
 
 ## 🚀 Quick Start
-1. Clone the repo
+ Clone the repo
    `bash
    git clone https://github.com/YaSaMaN-Za/glog.git
