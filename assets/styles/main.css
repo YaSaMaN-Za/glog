@@ -90,9 +90,9 @@
  body {
      font-family: inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
      color: var(--text);
-     background: radial-gradient(circle at top left, #fa7b04 0%, transparent 35%),
-         radial-gradient(circle at bottom right, #ff8d01 0%, transparent 30%),
-         linear-gradient(135deg, #c7b847, #bfb94d, #f5e504);
+     background: radial-gradient(circle at top left, #fa7b04 0%, transparent 25%),
+         radial-gradient(circle at bottom right, #f7ad53 0%, transparent 20%),
+         linear-gradient(135deg, #faed8e, #bfb94d, #f8f4b8);
      min-height: 100vh;
      display: flex;
      justify-content: center;
@@ -136,11 +136,12 @@
  }
 
  .logo:hover i,
- .logo:hover .matn {
+ .logo:hover .text-logo {
 
      transform: translateY(-4px);
      box-shadow: 0 15px 25px var(--shadow-primary-lg);
- }
+ transition: var(--transition);
+    }
 
  .logo i {
      width: 55px;
@@ -153,7 +154,7 @@
      box-shadow: 0 15px 35px rgba(219, 171, 12, 0.35);
  }
 
- .matn {
+ .text-logo {
      display: inline-flex;
      align-items: center;
      gap: 10px;
@@ -168,7 +169,7 @@
 
  }
 
- .matn i {
+ .text-logo i {
      font-size: 22px;
  }
 
@@ -335,15 +336,15 @@
  }
 
  .socials button:first-child:hover {
-     color: rgb(248, 86, 53);
+     color: rgb(90, 173, 251);
  }
 
  .socials button:last-child:hover {
-     color: rgb(252, 87, 4);
+     color: rgb(180, 247, 65);
  }
 
  .socials button:nth-child(2):hover {
-     color: rgb(253, 29, 156);
+     color: rgb(54, 227, 254);
  }
 
  .login-link {
@@ -364,8 +365,9 @@
      grid-template-columns: repeat(3, 1fr);
      grid-template-rows: repeat(3, 150px);
      gap: 20px;
-     background: linear-gradient(135deg, var(--primary), #f7df7d, #c9761d);
-     padding: 40px;
+background: radial-gradient(circle at top left, #f8b77a 0%, transparent 25%),
+         radial-gradient(circle at bottom right, #f7ad53 0%, transparent 20%),
+         linear-gradient(135deg, #faed8e, #b5b391, #f8f4b8);     padding: 40px;
  }
 
  .card {
@@ -388,6 +390,6 @@
 
  .card1 {
      grid-column: span 3;
-     grid-row: span 4;
+     grid-row: span 2;
 
  }
