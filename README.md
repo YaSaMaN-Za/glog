@@ -13,12 +13,22 @@ Perfect for developers who want a beautiful login/signup page without using heav
 ## ✨ Features
 - Responsive Design - Looks great on all devices
 - Social Logins - Google, LinkedIn, ORCID buttons
-- Beautiful UI - Warm gradient + sunset image gallery grid
+- Beautiful  - Warm gradient + sunset image gallery grid
 - Glassmorphism Form - Modern blur effect
 - Clean Code - Easy to customize and extend
 
 ## 🖼️ Preview
 The template includes a signup form with social login options next to a beautiful sunset image gallery.
+
+<div align="center">
+  <img src="./assets/image/glog.png" width="120" alt="Karts Logo">
+  
+  <p> Built with HTML & CSS</p>
+  
+  ![GitHub stars](https://img.shields.io/badge/stars-⭐-yellow)
+  ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+  ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+</div>
 
 ## 🚀 Quick Start
 1. Clone the repo
