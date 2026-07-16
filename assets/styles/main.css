@@ -235,11 +235,11 @@
  }
 
  .remember input {
-     /* appearance: none; */
+     appearance: none;
      width: 20px;
      height: 20px;
      border-radius: var(--radius-xs);
-     border: 2px solid var(--border);
+     border: 3px solid #63513c;
      background-color: transparent;
      transition: var(--transition);
      position: relative;
