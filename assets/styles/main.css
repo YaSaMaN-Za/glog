@@ -393,3 +393,44 @@ background: radial-gradient(circle at top left, #f8b77a 0%, transparent 25%),
      grid-row: span 2;
 
  }
+ 
+
+@media (max-width:1300px) {
+    .wrapper {
+        width: 100%;
+    }
+    .register {
+        padding: 45px;
+    }
+    .gallery {
+        padding: 30px;
+    }
+}
+
+@media (max-width:992px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+        max-width: 700px;
+    }
+    .register {
+        padding: 45px;
+    }
+    .gallery {
+        padding: 30px;
+    }
+}
+
+@media (max-width:768px) {
+    body {
+        padding: 20px;
+    }
+    .wrapper {
+        border-radius: var(--radius-lg);
+    }
+    .register {
+        padding: 35px 28px;
+    }
+    .gallery {
+        display: none;
+    }
+}
