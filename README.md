@@ -21,7 +21,7 @@ Perfect for developers who want a beautiful login/signup page without using heav
 The template includes a signup form with social login options next to a beautiful sunset image gallery.
 
 <div align="center">
-  <img src="./assets/image/glog.png" width="120" alt="Karts Logo">
+  <img src="./assets/image/glog.png" width="500" alt="Karts Logo">
   
   <p> Built with HTML & CSS</p>
   
