@@ -363,7 +363,7 @@
  .gallery {
      display: grid;
      grid-template-columns: repeat(3, 1fr);
-     grid-template-rows: repeat(3, 150px);
+     grid-template-rows: repeat(4, 150px);
      gap: 20px;
 background: radial-gradient(circle at top left, #f8b77a 0%, transparent 25%),
          radial-gradient(circle at bottom right, #f7ad53 0%, transparent 20%),
