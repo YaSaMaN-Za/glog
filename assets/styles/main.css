@@ -385,16 +385,12 @@ background: radial-gradient(circle at top left, #f8b77a 0%, transparent 25%),
      height: 100%;
      object-fit: cover;
      transition: .6s;
-
  }
-
  .card1 {
      grid-column: span 3;
      grid-row: span 2;
-
  }
  
-
 @media (max-width:1300px) {
     .wrapper {
         width: 100%;
